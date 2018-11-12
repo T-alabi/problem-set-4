@@ -48,7 +48,10 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
+   var fhar = (cels * 1.8) + 32;
 
+   var div = document.getElementById("output3")
+   div.innerHTML = fhar;
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
