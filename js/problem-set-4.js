@@ -5,11 +5,12 @@
 function hello() {
 
   // WRITE YOUR EXERCISE 1 CODE HERE
-
+  var p = document.getElementById("output1");
+    p.innerHTML = "Hello, AP Computer Science Principles!";
+}
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
-}
 
 /*
  * Hello, Again. 3 points.
