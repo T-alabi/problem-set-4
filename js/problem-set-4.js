@@ -48,10 +48,10 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
-   var fhar = (cels * 1.8) + 32;
+   var fhar = ((cels * 1.8) + 32).toFixed(2);
 
    var div = document.getElementById("output3")
-   div.innerHTML = fhar;
+   div.innerHTML = `${cels} degrees Celsius equals ${fhar} deegrees Fahrenheit.`;
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
