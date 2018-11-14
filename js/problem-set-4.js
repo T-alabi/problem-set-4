@@ -73,8 +73,7 @@ function fahrenheit() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
   var cels1 = ((fhar / 1.8) - 32).toFixed(2);
-
-  var div = document.getElementById("output4")
+var div = document.getElementById("output4");
   div.innerHTML = `${fhar} degrees Celsius equals ${cels1} degrees Fahrenheit.`;
 
   ///////////////////////////// DO NOT MODIFY
