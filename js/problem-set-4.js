@@ -51,7 +51,8 @@ function celsius() {
    var fhar = ((cels * 1.8) + 32).toFixed(2);
 
    var div = document.getElementById("output3")
-   div.innerHTML = `${cels} degrees Celsius equals ${fhar} deegrees Fahrenheit.`;
+   div.innerHTML = `${cels} degrees Celsius equals ${fhar} degrees Fahrenheit.`;
+
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
