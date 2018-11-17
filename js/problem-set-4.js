@@ -98,6 +98,9 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
+let miles = inches / 63360;
+var div = document.getElementById("output5");
+div.innerHTML = `Miles:${miles}` 
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
