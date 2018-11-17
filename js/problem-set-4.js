@@ -98,10 +98,12 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
-let miles = inches / 63360;
+let miles = Math.floor(inches / 63360);
+let yards = Math.floor((inches / 36) % 1760);
+let feet = Math.floor((inches / 12) % 3);
+let inches1 = Math.floor(inches % 12);
 var div = document.getElementById("output5");
-div.innerHTML = `Miles:${miles}` 
-
+div.innerHTML = `Miles: ${miles}<br/>Yards: ${yards}<br/>Feet: ${feet}<br/>Inches: ${inches1}`
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
