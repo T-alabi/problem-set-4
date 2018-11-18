@@ -184,6 +184,11 @@ function ounces() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 8 CODE HERE
+let tons = Math.floor(ounces / 32000);
+let pounds = Math.floor((ounces / 16) % 2000);
+let ounces1 = Math.floor(ounces % 16 );
+var div = document.getElementById("output8");
+div.innerHTML = `Tons: ${tons}<br/>Pounds: ${pounds}<br/>Ounces: ${ounces1}`
 
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
