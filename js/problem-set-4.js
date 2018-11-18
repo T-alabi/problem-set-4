@@ -213,12 +213,17 @@ function money() {
   /////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 9 CODE HERE
-
+let dollars = Math.floor(pennies / 100);
+let quarters = Math.floor((pennies / 25) % 4);
+let dimes  = Math.floor((pennies / 10) % 2.5);
+let nickles = Math.floor((pennies / 5) % 2);
+let pennies1 = Math.floor(pennies % 5);
+var div = document.getElementById("output9");
+div.innerHTML = `Dollars: ${dollars}<br/>Quarters: ${quarters}<br/>Dimes: ${dimes}<br/>Nickels: ${nickles}<br/>Pennies: ${pennies1}`
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
 }
-
 /*
  * Change. 8 points.
  */
