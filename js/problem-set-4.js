@@ -242,7 +242,27 @@ function change() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 10 CODE HERE
+  let quarters = 0;
+  let dimes = 0;
+  let nickles = 0;
+  let pennies = 0;
 
+  quaters = amount / 0.25;
+  quaters = Math.floor(quaters);
+  amount = amount % 0.25;
+dimes = amount / 0.10;
+dimes = Math.floor(dimes);
+amount = amount % 0.10;
+nickles = amount / 0.05;
+nickles = Math.floor(nickles);
+amount = amount % 0.05;
+pennies = amount / 0.01;
+pennies = Math.floor(pennies);
+amount = amount % 0.01;
+
+amount  = quaters + dimes + nickles + pennies;
+  var div = document.getElementById("output10");
+  div.innerHTML = `${amount} coins.`
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
