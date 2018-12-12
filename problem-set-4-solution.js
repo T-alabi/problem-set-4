@@ -45,10 +45,11 @@ function celsius() {
  */
 
 function fahrenheit() {
-  let fahr = Number(((Math.random() * 1001) - 100).toFixed(2));
+  let fahr = Number(((Math.random() * 1001) - 100).toFixed(2)); /*generates radom number*/ 
 
-  let cels = (fahr - 32) * 5 / 9;
+  let cels = (fahr - 32) * 5 / 9; /*math that converst the fhar. number to cels*/
   let result = fahr + " degrees Fahrenheit equals " +  cels.toFixed(2) + " degrees Celsius.";
+  /*changes the */
   document.getElementById("output4").innerHTML = result;
 
   check("fahrenheit", fahr);
