@@ -2,9 +2,9 @@
  * SOLUTION: Hello.
  */
 
-function hello() {
-  let result = "Hello, AP Computer Science Principles!";
-  document.getElementById("output1").innerHTML = result;
+/*declares the function */function hello() {
+/*declares the varible "result" and correspodning message*/  let result = "Hello, AP Computer Science Principles!";
+/*declares where the varible result will appear */  document.getElementById("output1").innerHTML = result;
 
   check("hello");
 }
