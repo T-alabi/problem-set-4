@@ -14,10 +14,12 @@
  */
 
 function helloAgain() {
-  let name = prompt("What is your name?");
+  let name = prompt("What is your name?"); /*declares the varible name and prpmpts user for an inputn 
+  that will be asingned to the varible*/
 
-  let result = "Hello, " + name + "!";
-  document.getElementById("output2").innerHTML = result;
+  let result = "Hello, " + name + "!"; /*declares varible result and attaches a message that will 
+  be displaid when the varible result is used*/
+  document.getElementById("output2").innerHTML = result; /* varible result is used*/
 
   check("helloAgain", name);
 }
@@ -29,8 +31,10 @@ function helloAgain() {
 function celsius() {
   let cels = Number(((Math.random() * 1001) - 100).toFixed(2));
 
-  let fahr = cels * 9 / 5 + 32;
+  let fahr = cels * 9 / 5 + 32; /* decalres varible fhar and the math that os used to get fharenight*/
   let result = cels + " degrees Celsius equals " + fahr.toFixed(2) + " degrees Fahrenheit.";
+  /*declres the result varible which is the final result of the problem. and sets it to a fixed 
+  decimal of 2*/
   document.getElementById("output3").innerHTML = result;
 
   check("celsius", cels);
