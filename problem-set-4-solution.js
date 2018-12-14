@@ -14,10 +14,10 @@
  */
 
 function helloAgain() {
-  let name = prompt("What is your name?"); /*declares the varible name and prpmpts user for an inputn 
+  let name = prompt("What is your name?"); /*declares the varible name and prpmpts user for an inputn
   that will be asingned to the varible*/
 
-  let result = "Hello, " + name + "!"; /*declares varible result and attaches a message that will 
+  let result = "Hello, " + name + "!"; /*declares varible result and attaches a message that will
   be displaid when the varible result is used*/
   document.getElementById("output2").innerHTML = result; /* varible result is used*/
 
@@ -33,9 +33,9 @@ function celsius() {
 
   let fahr = cels * 9 / 5 + 32; /* decalres varible fhar and the math that os used to get fharenight*/
   let result = cels + " degrees Celsius equals " + fahr.toFixed(2) + " degrees Fahrenheit.";
-  /*declres the result varible which is the final result of the problem. and sets it to a fixed 
+  /*declres the result varible which is the final result of the problem. and sets it to a fixed
   decimal of 2*/
-  document.getElementById("output3").innerHTML = result;
+  document.getElementById("output3").innerHTML = result;/*displays the answer*/
 
   check("celsius", cels);
 }
@@ -45,7 +45,7 @@ function celsius() {
  */
 
 function fahrenheit() {
-  let fahr = Number(((Math.random() * 1001) - 100).toFixed(2)); /*generates radom number*/ 
+  let fahr = Number(((Math.random() * 1001) - 100).toFixed(2)); /*generates radom number*/
 
   let cels = (fahr - 32) * 5 / 9; /*math that converst the fhar. number to cels*/
   let result = fahr + " degrees Fahrenheit equals " +  cels.toFixed(2) + " degrees Celsius.";
@@ -60,39 +60,39 @@ function fahrenheit() {
  */
 
 function inches() {
-  const MILE = 63360;
-  const YARD = 36;
-  const FOOT = 12;
+  const MILE = 63360;/*declares varible mile and sets it to inches in a mile*/
+  const YARD = 36; /*sets yard to inches in a yard*/
+  const FOOT = 12; /*inches in a foot*/
 
-  let input = -1;
-  while (input < 0) {
-    input = Number(prompt("Enter a non-negative integer."));
+  let input = -1; /*sets input into invalid value*/
+  while (input < 0) {/*assures that the prompt will show*/
+    input = Number(prompt("Enter a non-negative integer."));/*NUMBER allows only number inputs*/
 
-    if (input === null) {
-      break;
-    } else if (Number.isNaN(input)) {
-      input = -1;
-    } else if (!Number.isInteger(input)) {
-      input = -1;
+    if (input === null) {/*if there is no input*/
+      break;/*dont continue*/
+    } else if (Number.isNaN(input)) {/*declares:else if input isn't a number */
+      input = -1;/*sets input back to -1*/
+    } else if (!Number.isInteger(input)) {/*declares: if input isnt an integer*/
+      input = -1;/*sets input to -1*/
     }
   }
 
-  if (input !== null) {
-    let inches = input;
-    let miles = Math.floor(inches / MILE);
-    inches = inches % MILE;
-    let yards = Math.floor(inches / YARD);
-    inches = inches % YARD;
-    let feet = Math.floor(inches / FOOT);
-    inches = inches % FOOT;
+  if (input !== null) {/*if input isnt null*/
+    let inches = input;/*inches is equal to input*/
+    let miles = Math.floor(inches / MILE); /*varible miles = inches/ (miles in inches). no decimal fully rounded*/
+    inches = inches % MILE; /*inches = remainder of inches/miles */
+    let yards = Math.floor(inches / YARD);/*varible yards = inches/ (yards in inches). no decimal fully rounded */
+    inches = inches % YARD;/*yards = remainder of inches / yards */
+    let feet = Math.floor(inches / FOOT);/*let yards repeated */
+    inches = inches % FOOT;/*inches repeated*/
 
     let result = "Miles: " + miles + "<br/>" +
                  "Yards: " + yards + "<br/>" +
                  "Feet: " + feet + "<br/>" +
-                 "Inches: " + inches;
-    document.getElementById("output5").innerHTML = result;
+                 "Inches: " + inches;/*declares varible result as full text of correct answer*/
+    document.getElementById("output5").innerHTML = result;/*display varible result*/
   } else {
-    document.getElementById("output5").innerHTML = "";
+    document.getElementById("output5").innerHTML = "";/*else display nothing*/
   }
 
   check("inches", input);
